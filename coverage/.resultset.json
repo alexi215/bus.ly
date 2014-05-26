@@ -1,0 +1,56 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/admin/dev/bus.ly/db/schema.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/admin/dev/bus.ly/app/controllers/welcome_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/admin/dev/bus.ly/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1401120565
+  }
+}

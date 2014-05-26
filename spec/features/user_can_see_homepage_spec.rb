@@ -1,4 +1,4 @@
-require 'spec_helper'
+require "spec_helper"
 
 describe 'User can see homepage'do
   it 'has the title Bus.ly' do
