@@ -5,11 +5,17 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
-  resources :users, except:[:index] do
-    resources :favorites
-  end
+  resources :predictions, only: [:index, :show, :search]
 
-  resources :sessions, only: [:create]
+  get '/home'       => 'predictions#index'
+  get '/search'     => 'predictions#search'
+  get '/prediction' => 'predictions#show'
+
+  # resources :users, except:[:index] do
+  #   resources :favorites
+  # end
+
+  # resources :sessions, only: [:create]
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
