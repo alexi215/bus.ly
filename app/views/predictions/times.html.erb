@@ -1,4 +1,10 @@
-<h1>Stop: <%= @stop_name %></h1>
+<h1>Predictions</h1>
+<p>Route: <%= params[:route] %></p>
+<p>Direction: <%= @predictions[0]['DirectionText'] %></p> 
+<p>Stop: <%= @stop_name %></p>
 
-
-
+<ul>
+<% @predictions.each do |prediction| %>
+  <li><%= prediction['Minutes'] %></li>
+<% end %>
+</ul>

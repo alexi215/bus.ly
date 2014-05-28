@@ -1,9 +1,11 @@
 <h1><%= @route_id %> Stops</h1>
 
-<h2>Trip Direction: <%= @direction_0_sign %></h2>
-<h3>Select a <%= @direction_0['DirectionText'] %>-bound stop</h3>
+<%= link_to "Home", new_artist_path %>
+
+<h2>Trip Direction: <%= @direction_0['DirectionText'] %> to <%= @direction_0_sign %></h2>
 
 <form method='get' action='<%= bus_times_path %>'>
+  <input type="hidden" name="route" value="<%= @route_id %>">
   <select size="10" style="width: 300px; height: 350px" name='stop'>
     <% @direction_0_stops.each do |stop| %>
       <option value="<%= stop['StopID'] %>"><%= stop['Name'] %></option>
@@ -12,10 +14,10 @@
   <input type='submit' value='Submit'>
 </form>
 
-<h2>Trip Direction: <%= @direction_1_sign %></h2>
-<h3>Select a <%= @direction_1['DirectionText'] %>-bound stop</h3>
+<h2>Trip Direction: <%= @direction_1['DirectionText'] %> to <%= @direction_1_sign %></h2>
 
 <form method='get' action='<%= bus_times_path %>'>
+  <input type="hidden" name="route" value="<%= @route_id %>">
   <select size="10" style="width: 300px; height: 350px" name='stop'>
     <% @direction_1_stops.each do |stop| %>
       <option value="<%= stop['StopID'] %>"><%= stop['Name'] %></option>
@@ -23,3 +25,4 @@
   </select>
   <input type='submit' value='Submit'>
 </form>
+
