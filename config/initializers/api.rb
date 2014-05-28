@@ -1,0 +1,1 @@
+WMATA_KEY = ENV['WMATA_KEY']

@@ -2,13 +2,13 @@ class PredictionsController < ApplicationController
   # before_action :bus_route_id, only [:routes, :stops]
 
   def routes
-    response = HTTParty.get('http://api.wmata.com/Bus.svc/json/JRoutes?api_key=ud7ahaty74qdc2ghs4h34y5g')
+    response = HTTParty.get("http://api.wmata.com/Bus.svc/json/JRoutes?api_key=#{WMATA_KEY}")
     @routes = response['Routes']
   end
 
   def stops
     if params.has_key?(:route) && !params[:route].empty?
-      response = HTTParty.get("http://api.wmata.com/Bus.svc/json/JRouteDetails?routeId=#{params[:route]}&api_key=ud7ahaty74qdc2ghs4h34y5g")
+      response = HTTParty.get("http://api.wmata.com/Bus.svc/json/JRouteDetails?routeId=#{params[:route]}&api_key=#{WMATA_KEY}")
       @route_id           = response['RouteID']
       
       @direction_0        = response['Direction0']
@@ -27,7 +27,7 @@ class PredictionsController < ApplicationController
 
   def times
     if params[:stop] && params[:route]
-      response = HTTParty.get("http://api.wmata.com/NextBusService.svc/json/jPredictions?StopID=#{params[:stop]}&api_key=ud7ahaty74qdc2ghs4h34y5g")
+      response = HTTParty.get("http://api.wmata.com/NextBusService.svc/json/jPredictions?StopID=#{params[:stop]}&api_key=#{WMATA_KEY}")
       @predictions = response['Predictions'].select do |time|
         time['RouteID'] == params[:route]
       @stop_name = response['StopName']
