@@ -5,11 +5,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
-  resources :predictions, only: [:index, :show, :search]
-
-  get '/home'       => 'predictions#index'
-  get '/search'     => 'predictions#search'
-  get '/prediction' => 'predictions#show'
+  get '/bus_routes' => 'predictions#routes'
+  get '/bus_stops'  => 'predictions#stops'
+  get '/bus_times'  => 'predictions#times'
 
   # resources :users, except:[:index] do
   #   resources :favorites
