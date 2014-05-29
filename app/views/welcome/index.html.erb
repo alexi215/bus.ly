@@ -1,11 +1,8 @@
 <body>
 
 <div class='container'>
-
-<h1 visibiliy='hidden'>Bus.ly</h1>
-
+  <h3>Sign In</h3>
   <%= render 'common/flash' %>
-  
   <%= form_for :session, url: sessions_path do |f| %>
     <%= f.label :email %>
     <%= f.text_field :email %>
@@ -15,12 +12,12 @@
 
     <%= f.submit 'Sign in', id: 'signin' %>
     <% end %>
-
-  <%= link_to 'Skip to Bus Predictions', bus_routes_path %>
-
-  <%= link_to 'Sign Up!', signup_path %>
-
-
+  <div class='link_back'>
+    <%= link_to 'Skip to Bus Predictions', bus_routes_path %>
+  </div>
+  <div class= 'signup'>
+    <%= link_to 'Sign Up!', signup_path %>
+  </div>
 </body>
 
 
