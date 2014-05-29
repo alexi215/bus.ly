@@ -3,7 +3,7 @@
 // font-family: 'Raleway Dots', cursive;
 
 body {
-  background: url(WMATA_Metrobus_stop_marker.jpg) no-repeat center center fixed;
+  background: asset-url('WMATA_Metrobus_stop_marker.jpg', image) no-repeat center center fixed;
   background-size: cover;
   filter: opacity(.5);
   font-family: 'Helvetica', sans-serif;
