@@ -1,0 +1,14 @@
+<h1>Select a route</h1>
+
+<div class='col dir-0'>
+<form method='get' action='<%= bus_stops_path %>'>
+  <select class='menu' size='10' name='route'>
+    <% @routes.each do |route| %>
+      <option value="<%= route['RouteID'] %>"><%= route['Name'] %></option>
+    <% end %>
+  </select>
+  <div class='button'>
+    <input type='submit' name='' value='Submit'>
+  </div>
+</form>
+</div>

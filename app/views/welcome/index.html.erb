@@ -1,0 +1,23 @@
+<body>
+
+<div class='container'>
+  <h3>Sign In</h3>
+  <%= render 'common/flash' %>
+  <%= form_for :session, url: sessions_path do |f| %>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+
+    <%= f.submit 'Sign in', id: 'signin' %>
+    <% end %>
+  <div class='link_back'>
+    <%= link_to 'Skip to Bus Predictions', bus_routes_path %>
+  </div>
+  <div class= 'signup'>
+    <%= link_to 'Sign Up!', signup_path %>
+  </div>
+</body>
+
+

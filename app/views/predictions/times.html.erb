@@ -1,0 +1,13 @@
+<h1>Predictions in minutes</h1>
+
+  <h3>for the <%= params[:route] %> at the <%= @stop_name %> stop</h3>
+
+  <ul>
+  <% @predictions.each do |prediction| %>
+    <li><%= prediction['Minutes'] %></li>
+  <% end %>
+  </ul>
+
+<div class="link_back">
+<%= link_to 'Back to Home', root_path %>
+</div>
