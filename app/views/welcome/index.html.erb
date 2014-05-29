@@ -1,5 +1,26 @@
-<h1>Bus.ly</h1>
+<body>
 
-<%= link_to 'Skip to Bus Predictions',
-  bus_routes_path %>
+<div class='container'>
+
+<h1 visibiliy='hidden'>Bus.ly</h1>
+
+  <%= render 'common/flash' %>
+  
+  <%= form_for :session, url: sessions_path do |f| %>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+
+    <%= f.submit 'Sign in', id: 'signin' %>
+    <% end %>
+
+  <%= link_to 'Skip to Bus Predictions', bus_routes_path %>
+
+  <%= link_to 'Sign Up!', signup_path %>
+
+
+</body>
+
 

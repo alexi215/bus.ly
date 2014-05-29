@@ -1,51 +1,32 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/admin/dev/bus.ly/spec/features/user_can_see_homepage_spec.rb": [
+      "/Users/admin/dev/bus.ly/spec/features/user_can_see_welcome_page_spec.rb": [
         1,
         null,
         1,
         1,
-        1,
-        1,
+        0,
+        0,
         null,
         null,
         1,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
         null,
         null
       ],
-      "/Users/admin/dev/bus.ly/app/controllers/predictions_controller.rb": [
+      "/Users/admin/dev/bus.ly/spec/models/user_spec.rb": [
         1,
         null,
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/admin/dev/bus.ly/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/Users/admin/dev/bus.ly/app/controllers/welcome_controller.rb": [
-        1,
-        null,
-        1,
+        0,
+        0,
         null,
         null
       ]
     },
-    "timestamp": 1401212473
+    "timestamp": 1401308776
   }
 }

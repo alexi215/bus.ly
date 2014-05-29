@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BusLy</title>
+  <title>Bus.Ly</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Lobster|Monofett|Raleway+Dots' rel='stylesheet' type='text/css'>
 </head>
-<body>
-
-<%= yield %>
-
-</body>
+  
+  <body> 
+    <div class='header'>
+      <p>Bus.ly</span>
+      <%= render 'common/signout' %>
+    </div>  
+    <div class='main'>
+      <%= yield %>
+    </div>
+  </body>
 </html>

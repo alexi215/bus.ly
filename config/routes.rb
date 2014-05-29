@@ -9,12 +9,14 @@ Rails.application.routes.draw do
   get '/bus_stops'  => 'predictions#stops'
   get '/bus_times'  => 'predictions#times'
 
-  # resources :users, except:[:index] do
-  #   resources :favorites
-  # end
-
-  # resources :sessions, only: [:create]
+  resources :users, except:[:index, :show] do
+    resources :favorites, only: [:index, :edit, :create, :destroy]
+  end
+  resources :sessions, only: [:create]
   
+  get '/signup' => 'users#new'
+  delete '/signout' => 'sessions#destroy'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

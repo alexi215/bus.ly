@@ -1,28 +1,30 @@
-<h1><%= @route_id %> Stops</h1>
+<h1>Choose a Trip Direction for</h1>
+<h2><%= @route_id %> Stops</h2>
 
+<div class='col dir-0'>
+  <h3><%= @direction_0['DirectionText'] %> to <%= @direction_0_sign %></h3>
 
+  <form method='get' action='<%= bus_times_path %>'>
+    <input type="hidden" name="route" value="<%= @route_id %>">
+    <select size="10" name='stop'>
+      <% @direction_0_stops.each do |stop| %>
+        <option value="<%= stop['StopID'] %>"><%= stop['Name'] %></option>
+      <% end %>
+    </select>
+    <input type='submit' name='' value='Submit'>
+  </form>
+</div>
 
-<h2>Trip Direction: <%= @direction_0['DirectionText'] %> to <%= @direction_0_sign %></h2>
+<div class='col dir-1'>
+  <h3><%= @direction_1['DirectionText'] %> to <%= @direction_1_sign %></h3>
 
-<form method='get' action='<%= bus_times_path %>'>
-  <input type="hidden" name="route" value="<%= @route_id %>">
-  <select size="10" style="width: 300px; height: 350px" name='stop'>
-    <% @direction_0_stops.each do |stop| %>
-      <option value="<%= stop['StopID'] %>"><%= stop['Name'] %></option>
-    <% end %>
-  </select>
-  <input type='submit' value='Submit'>
-</form>
-
-<h2>Trip Direction: <%= @direction_1['DirectionText'] %> to <%= @direction_1_sign %></h2>
-
-<form method='get' action='<%= bus_times_path %>'>
-  <input type="hidden" name="route" value="<%= @route_id %>">
-  <select size="10" style="width: 300px; height: 350px" name='stop'>
-    <% @direction_1_stops.each do |stop| %>
-      <option value="<%= stop['StopID'] %>"><%= stop['Name'] %></option>
-    <% end %>
-  </select>
-  <input type='submit' value='Submit'>
-</form>
-
+  <form method='get' action='<%= bus_times_path %>'>
+    <input type="hidden" name="route" value="<%= @route_id %>">
+    <select size="10" name='stop'>
+      <% @direction_1_stops.each do |stop| %>
+        <option value="<%= stop['StopID'] %>"><%= stop['Name'] %></option>
+      <% end %>
+    </select>
+    <input type='submit' value='Submit'>
+  </form>
+</div>
