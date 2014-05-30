@@ -30,3 +30,4 @@ My user stories and features can be found [here](https://www.pivotaltracker.com/
 ### Outstanding Features
 * Additional rspec/capybara testing
 * Favorites feature: enables users to persist their favorites bus stops on the bus routes page for quick retrieval
+* The app was developed using Google Canary - I have yet to implement HTML/CSS for Safari and Firefox.
