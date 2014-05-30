@@ -25,7 +25,7 @@ My user stories and features can be found [here](https://www.pivotaltracker.com/
 
 ### Wire Frames
 
-* Wire Frames to be updated shortly
+* Wire Frames [in the repo above](https://github.com/alexi215/bus.ly/blob/master/Bus.ly.jpg)
  
 ### Outstanding Features
 * Additional rspec/capybara testing
