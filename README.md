@@ -2,4 +2,29 @@
 ### GA WDI 2014 - Project 1
 
 ### Overview
-This app seeks to provide predictions for WMATA Buses in the D.C. area.
+**Bus.ly** is a simple app to practice basic web development concepts and technologies. Bus.ly is intended to provide predictions for WMATA Buses in the D.C. area.
+
+### Technologies Used
+
+* Ruby 2.1.1
+* Ruby on rails 4.1.1
+* PSQL database
+* Heroku
+* Authentication and authorization using bcrypt
+* WMATA Bus APIs
+* Testing using capybara
+
+### User Stories
+
+* [Complete] As a bus rider, I visit Bus.ly to find out when my bus will arrive so that I show up on time
+* [Incomplete] As a bus rider I want to save my favorite bus stops so that I can quickly find them in the future
+
+My user stories and features can be found [here]https://www.pivotaltracker.com/s/projects/1086284
+
+### Wire Frames
+
+* My wire frames can be found [here]
+ 
+### Outstanding Features
+* Additional rspec/capybara testing
+* Favorites feature: enables users to persist their favorites bus stops on the bus routes page for quick retrieval
