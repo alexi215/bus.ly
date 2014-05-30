@@ -1,6 +1,8 @@
 # Bus.ly
 ### GA WDI 2014 - Project 1
 
+* [Link to deployed site on heroku](http://stormy-basin-5028.herokuapp.com/)
+
 ### Overview
 **Bus.ly** is a simple app to practice basic web development concepts and technologies. Bus.ly is intended to provide predictions for WMATA Buses in the D.C. area.
 
@@ -19,11 +21,11 @@
 * [Complete] As a bus rider, I visit Bus.ly to find out when my bus will arrive so that I show up on time
 * [Incomplete] As a bus rider I want to save my favorite bus stops so that I can quickly find them in the future
 
-My user stories and features can be found [here]https://www.pivotaltracker.com/s/projects/1086284
+My user stories and features can be found [here](https://www.pivotaltracker.com/s/projects/1086284)
 
 ### Wire Frames
 
-* My wire frames can be found [here]
+* Wire Frames to be updated shortly
  
 ### Outstanding Features
 * Additional rspec/capybara testing
