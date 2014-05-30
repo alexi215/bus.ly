@@ -4,7 +4,7 @@
 * [Link to deployed site on heroku](http://stormy-basin-5028.herokuapp.com/)
 
 ### Overview
-**Bus.ly** is a simple app to practice basic web development concepts and technologies. Bus.ly is intended to provide predictions for WMATA Buses in the D.C. area.
+**Bus.ly** is a simple app to practice basic web development concepts and technologies. Bus.ly is intended to provide predictions for a desired WMATA Bus route at a specifc bus stop in the D.C. area.
 
 ### Technologies Used
 
