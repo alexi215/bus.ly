@@ -1,4 +1,4 @@
-<h1>Predictions in minutes</h1>
+<h1 class='routes'>Predictions in minutes</h1>
 
   <h3>for the <%= params[:route] %> at the <%= @stop_name %> stop</h3>
 
@@ -8,6 +8,6 @@
   <% end %>
   </ul>
 
-<div class="link">
-<%= link_to 'Back to Home', root_path %>
+<div class="prediction">
+<%= link_to 'Back to Home', bus_routes_path %>
 </div>

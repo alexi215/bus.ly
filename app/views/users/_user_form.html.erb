@@ -1,11 +1,8 @@
 <% if @user.errors.any? %>
-
-<div class='main'>
 <b>Errors:</b>
-
   <ul>
     <% @user.errors.full_messages.each do |msg| %>
-    <li><%= msg %></li>
+      <li><%= msg %></li>
     <% end %>
   </ul>
   <% end %>
@@ -25,4 +22,4 @@
 
     <%= f.submit 'Submit', id: 'submit' %>
   <% end %>
-</div>
+
