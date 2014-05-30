@@ -13,7 +13,7 @@
 * PSQL database
 * Heroku
 * Authentication and authorization using bcrypt
-* WMATA Bus APIs
+* [WMATA Bus APIs](http://developer.wmata.com/docs/read/Home#bus)
 * Testing using capybara
 
 ### User Stories
