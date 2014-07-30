@@ -28,7 +28,8 @@ My user stories and features can be found [here](https://www.pivotaltracker.com/
 * Wire Frames [in the repo above](https://github.com/alexi215/bus.ly/blob/master/Bus.ly.jpg)
  
 ### Outstanding Features
+* Move app to Backbone.js or JavaScript framework
 * Additional rspec/capybara testing
-* Favorites feature: enables users to persist their favorites bus stops on the bus routes page for quick retrieval
+* Favorites feature: enables users to persist their favorite bus stops on the bus routes page for quick retrieval
 * The app was developed using Google Canary - I have yet to implement HTML/CSS for Safari and Firefox.
 * Responsiveness for tablet/smartphones.
