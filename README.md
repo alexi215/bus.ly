@@ -25,7 +25,7 @@ My user stories and features can be found [here](https://www.pivotaltracker.com/
 
 ### Wire Frames
 
-* Wire Frames [in the repo above](https://github.com/alexi215/bus.ly/blob/master/Wireframes%20-%20ERD.jpg)
+* Wire Frames [in the repo above](/wire_frame_ERD.jpg)
  
 ### Outstanding Features
 * Move app to Backbone.js or JavaScript framework
