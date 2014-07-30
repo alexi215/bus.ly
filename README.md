@@ -23,10 +23,7 @@
 
 My user stories and features can be found [here](https://www.pivotaltracker.com/s/projects/1086284)
 
-### Wire Frames
-
-
-![wire frame](/wire_frame_ERD.jpg "Wire Frame")
+### Wire Frames ![wire frame](/wire_frame_ERD.jpg "Wire Frame")
  
 ### Outstanding Features
 * Move app to Backbone.js or JavaScript framework
